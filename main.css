@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  text-align: center;
+  margin: 40px;
+  margin-bottom: 100px;
+}
+
+.grid-container {
+  display: grid;
+  height: 320px;
+  margin: auto;
+  width: 50%;
+  border: 3px solid red;
+  padding: 10px;
+  grid-auto-flow: column;
+  border-radius: 10px;
+}
+
+.grid-item {
+  height: 300px;
+  width: 200px;
+  margin: auto;
+  margin-top: 18px;
+}
+
+.button-container {
+  display: grid;
+  grid-auto-flow: column;
+  margin: auto;
+  width: 15%;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 80px;
+  margin: auto;
+}
+
+.card-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#red {
+}
+
+#black {
+}
+
+#higher {
+  display: none;
+}
+
+#lower {
+  display: none;
+}
+
+#in {
+  display: none;
+}
+
+#out {
+  display: none;
+}
+
+.rules-container {
+  display: grid;
+  grid-auto-flow: column;
+  margin: auto;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.rules-button {
+  width: 80px;
+}
