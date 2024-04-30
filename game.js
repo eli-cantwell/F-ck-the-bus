@@ -69,7 +69,7 @@ function redButtonFunction(e) {
       alert('Drink once')
       card1Div.innerHTML =
         '<img src="./images/card-back.png" class="card-img" />'
-    }, 500)
+    }, 1000)
     // Reset the randomNumberArray //
     setRandomNumberArray()
   } else if (randomCardNum1 % 2 == 0) {
@@ -107,7 +107,7 @@ function blackButtonFunction(e) {
       alert('Drink once')
       card1Div.innerHTML =
         '<img src="./images/card-back.png" class="card-img" />'
-    }, 500)
+    }, 1000)
     setRandomNumberArray()
   } else if (randomCardNum1 % 2 != 0) {
     // If card is black, hide the red/black buttons, show the higher/lower buttons //
@@ -150,7 +150,7 @@ function higherButtonFunction(e) {
         '<img src="./images/card-back.png" class="card-img" />'
       card2Div.innerHTML =
         '<img src="./images/card-back.png" class="card-img" />'
-    }, 500)
+    }, 1000)
     higherButton.style.display = 'none'
     lowerButton.style.display = 'none'
     redButton.style.display = 'inline'
@@ -166,7 +166,7 @@ function higherButtonFunction(e) {
         '<img src="./images/card-back.png" class="card-img" />'
       card2Div.innerHTML =
         '<img src="./images/card-back.png" class="card-img" />'
-    }, 500)
+    }, 1000)
     higherButton.style.display = 'none'
     lowerButton.style.display = 'none'
     redButton.style.display = 'inline'
@@ -212,7 +212,7 @@ function lowerButtonFunction(e) {
         '<img src="./images/card-back.png" class="card-img" />'
       card2Div.innerHTML =
         '<img src="./images/card-back.png" class="card-img" />'
-    }, 500)
+    }, 1000)
     higherButton.style.display = 'none'
     lowerButton.style.display = 'none'
     redButton.style.display = 'inline'
@@ -228,7 +228,7 @@ function lowerButtonFunction(e) {
         '<img src="./images/card-back.png" class="card-img" />'
       card2Div.innerHTML =
         '<img src="./images/card-back.png" class="card-img" />'
-    }, 500)
+    }, 1000)
     higherButton.style.display = 'none'
     lowerButton.style.display = 'none'
     redButton.style.display = 'inline'
@@ -283,7 +283,7 @@ function inButtonFunction(e) {
       redButton.style.display = 'inline'
       blackButton.style.display = 'inline'
       setRandomNumberArray()
-    }, 500)
+    }, 1000)
   }
   // If card value is outside of card1Value and card2Value, wait .5 seconds, alert amount of drinks and reset the board //
   else if (randomCardNum3 < lowestCard || randomCardNum3 > highestCard) {
@@ -300,7 +300,7 @@ function inButtonFunction(e) {
       redButton.style.display = 'inline'
       blackButton.style.display = 'inline'
       setRandomNumberArray()
-    }, 500)
+    }, 1000)
   } else if (randomCardNum3 > lowestCard && randomCardNum3 < highestCard) {
     // If card value is within card1Value and card2Value, hide the higher/lower buttons, show the in/out buttons //
     setTimeout(function () {
@@ -320,7 +320,7 @@ function inButtonFunction(e) {
       console.log('Card 1 Value: ' + card1Value)
       console.log('Card 2 Value: ' + card2Value)
       setRandomNumberArray()
-    }, 500)
+    }, 1000)
   }
 
   // Console.logs for debugging //
@@ -359,7 +359,7 @@ function outButtonFunction(e) {
       redButton.style.display = 'inline'
       blackButton.style.display = 'inline'
       setRandomNumberArray()
-    }, 500)
+    }, 1000)
   }
   // If card value is inside of card1Value and card2Value, wait .5 seconds, alert amount of drinks and reset the board //
   else if (randomCardNum3 < highestCard && randomCardNum3 > lowestCard) {
@@ -376,7 +376,7 @@ function outButtonFunction(e) {
       redButton.style.display = 'inline'
       blackButton.style.display = 'inline'
       setRandomNumberArray()
-    }, 500)
+    }, 1000)
   } else if (randomCardNum3 < lowestCard || randomCardNum3 > highestCard) {
     // If card value is outside card1Value and card2Value, hide the higher/lower buttons, show the in/out buttons //
     setTimeout(function () {
@@ -396,7 +396,7 @@ function outButtonFunction(e) {
       console.log('Card 1 Value: ' + card1Value)
       console.log('Card 2 Value: ' + card2Value)
       setRandomNumberArray()
-    }, 500)
+    }, 1000)
   }
 
   // Console.logs for debugging //
